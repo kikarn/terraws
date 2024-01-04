@@ -28,14 +28,14 @@ Everything should fall under Free Tier in AWS and don't cost anything. Let's hop
 Google the pre-reqs, like install Terraform and awscli. 
 Create a account on AWS. Then, create an IAM user and generate a key pair to use. 
 
-Then, in "Terraform folder":
-terraform init
-terrafrom validate
-terraform apply
-.
-.
-.
-Wait for the finish, navigate to the URL returned. 
+Then, in "terraform folder":
+* terraform init
+* terrafrom validate
+* terraform apply
+* .
+* .
+* .
+* Wait for the finish, navigate to the URL returned. 
 
 When done:
-terraform destroy
+* terraform destroy
