@@ -2,7 +2,7 @@
 
 resource "aws_instance" "testburk" {
   count                  = var.instance_count
-  ami                    = "ami-0014ce3e52359afbd"
+  ami                    = var.instance_ami
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.subnets[count.index].id
   vpc_security_group_ids = [aws_security_group.SG-testburk.id]

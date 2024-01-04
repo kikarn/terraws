@@ -36,3 +36,6 @@ terraform apply
 .
 .
 Wait for the finish, navigate to the URL returned. 
+
+When done:
+terraform destroy

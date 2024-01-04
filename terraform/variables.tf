@@ -29,6 +29,11 @@ variable "instance_count" {
   default     = 2
 }
 
+variable "instance_ami" {
+  type        = string
+  description = "EC2 ami, default is Ubuntu 22.04"
+  default     = "ami-0014ce3e52359afbd"
+}
 ##############
 
 
