@@ -4,7 +4,7 @@ resource "aws_instance" "testburk" {
   count                  = var.instance_count
   ami                    = var.instance_ami
   instance_type          = var.instance_type
-  subnet_id              = aws_subnet.subnets[count.index].id
+  subnet_id              = aws_subnet.subnets[(count.index % var.subnet_count)].id
   vpc_security_group_ids = [aws_security_group.SG-testburk.id]
   iam_instance_profile   = aws_iam_instance_profile.testburk_profile.name
   depends_on             = [aws_iam_role_policy.allow_s3_all]
