@@ -25,7 +25,10 @@ Everything should fall under Free Tier in AWS and don't cost anything. Let's hop
 
 ## How to do?
 
-Google the pre-reqs, like install Terraform and awscli. 
+Google the pre-reqs, like install Terraform and awscli. Start here:
+* https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+* https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build
+ 
 Create a account on AWS. Then, create an IAM user and generate a key pair to use. 
 
 Then, in "terraform folder":
@@ -39,3 +42,7 @@ Then, in "terraform folder":
 
 When done:
 * terraform destroy
+
+Example, change the number of EC2 intances to 4 (default is 2)
+* terraform apply -var=instance_count=4 
+
