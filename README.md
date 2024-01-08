@@ -9,7 +9,7 @@ Just trying to learn something new...
 
 The code sets up x number of EC2 instances and installs nginx. It also creates a load balancer and a S3 bucket to which html+images is uploaded. Furthermore, some network stuff like VPC, subnets, routes.. 
 
-Everything should fall under Free Tier in AWS and don't cost anything. Let's hope that's true. 
+Everything should fall under Free Tier in AWS and don't cost anything. Let's hope that's true. BUT CAN'T GUARANTEE, USE AT OWN RISK! 
 
 ## The files
 
